@@ -1,0 +1,38 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateNoteInput {
+  name: String!
+  text: String!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Mutation {
+  createNote(createNote: CreateNoteInput!): NoteEntity!
+  removeNote(id: Float!): Float!
+  updateNote(updateNote: UpdateNoteInput!): NoteEntity!
+}
+
+type NoteEntity {
+  createdAt: DateTime!
+  id: ID!
+  name: String!
+  text: String!
+  updatedAt: DateTime!
+}
+
+type Query {
+  getAllNotes: [NoteEntity!]!
+  getNote(id: Float!): NoteEntity!
+}
+
+input UpdateNoteInput {
+  id: ID!
+  name: String
+  text: String
+}

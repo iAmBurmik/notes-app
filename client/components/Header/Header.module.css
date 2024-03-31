@@ -1,0 +1,26 @@
+.header {
+  height: 100px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.03);
+  margin: 15px;
+  color: #6a778e;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.right-side a {
+  margin-right: 10px;
+}
+
+.left-side button {
+  margin-right: 10px;
+}

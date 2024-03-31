@@ -1,0 +1,43 @@
+@keyframes gooeyEffect {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.9, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.note-item {
+  text-decoration: none;
+  color: #525c6e;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+
+.note-item:hover {
+  animation: gooeyEffect 250ms 1;
+  color: #fff;
+  background-color: #406ff3;
+}
+
+.additional-info {
+  display: flex;
+}
+
+.additional-info .date {
+  font-weight: 300;
+}
+
+.additional-info .text {
+  margin-left: 5px;
+  color: #97a5bc;
+}
+
+.active {
+  color: #fff;
+  background-color: #406ff3;
+}

@@ -1,0 +1,37 @@
+.date {
+  color: #525c6e;
+  font-weight: 300;
+}
+
+.head-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.input-section h1 {
+  width: 100%;
+  font-family: inherit;
+}
+
+.input-section input {
+  width: 100%;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: inherit;
+  border: none;
+  color: #525c6e;
+  background: none;
+}
+
+.area-section textarea {
+  font-size: 16px;
+  font-family: inherit;
+  border: none;
+  background: none;
+  resize: none;
+  width: 100%;
+  height: auto;
+  color: #525c6e;
+}
